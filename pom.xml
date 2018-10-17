@@ -15,6 +15,10 @@
 		</license>
 	</licenses>
 
+	<modules>
+		<module>mycat-eureka</module>
+	</modules>
+
 	<properties>
 		<java.version>1.8</java.version>
 		<maven.compile.source>1.8</maven.compile.source>
@@ -119,7 +123,5 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 
 </project>
