@@ -18,6 +18,8 @@
 	<modules>
 		<module>mycat-eureka</module>
 		<module>mycat-gateway</module>
+		<module>mycat-consumer</module>
+		<module>mycat-provider</module>
 	</modules>
 
 	<properties>

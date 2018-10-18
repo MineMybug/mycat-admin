@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: mycat-consumer
+      
+server:
+  port: 6001
+ 
+ #Eureka config for mycat
+eureka:
+    instance:
+        statusPageUrlPath: /actuator/info  #服务信息
+        healthCheckUrlPath: /actuator/health  #服务心跳
+        hostname: 10.101.90.220  #服务注册中心ip
+        preferIpAddress: true  #是否使用ip注册到服务中心
+        instance-id: 10.101.90.220:${server.port}  #当前服务的访问地址
+    client:
+        enabled: true
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+#admin config
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+info:
+  version: 1.0

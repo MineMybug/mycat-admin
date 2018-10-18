@@ -1,6 +1,6 @@
 spring:
   application:
-    name: gateway-service
+    name: mycat-getaway
   cloud:        # spring cloud gateway 路由配置方式
     gateway:
       discovery:      #是否与服务发现组件进行结合，通过 serviceId(必须设置成大写) 转发到具体的服务实例。默认为false，设为true便开启通过服务中心的自动根据 serviceId 创建路由的功能。
@@ -11,14 +11,7 @@ spring:
         uri: http://www.163.com/
         predicates:
           - Path=/163/**
-      - id: SPRING-DEMO-FEIGN-MODULE
-        uri: lb://SPRING-DEMO-FEIGN-MODULE
-        order: 8000
-        predicates:
-        - Path=/feign/**
-        filters:
-        - StripPrefix=2
- 
+      
 server:
   port: 5001
  
@@ -47,5 +40,13 @@ feign:
     enabled: true
 
 #admin config
-
- 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
+info:
+  version: 1.0
