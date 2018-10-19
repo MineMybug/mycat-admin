@@ -26,7 +26,7 @@ public class ProviderController {
 	
 	@RequestMapping(value="/demo", method = RequestMethod.GET)
 	public String provider(){
-		int j = 1/0;
+//		int j = 1/0;
 		return "i am "+ port;
 	}
 
