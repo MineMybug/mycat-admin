@@ -1,3 +1,4 @@
+
 spring:
   application:
     name: mycat-consumer
@@ -18,7 +19,12 @@ eureka:
         serviceUrl:
             defaultZone: http://${eureka.instance.hostname}:8761/eureka/
 
+# 必须配置
 feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
   hystrix:
     enabled: true
 

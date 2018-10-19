@@ -11,6 +11,13 @@ spring:
         uri: http://www.163.com/
         predicates:
           - Path=/163/**
+      - id: mycat-consumer
+        uri: lb://mycat-consumer
+        order: 8000
+        predicates:
+        - Path=/api/**
+        filters:
+        - StripPrefix=1
       
 server:
   port: 5001
