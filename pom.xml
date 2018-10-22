@@ -20,6 +20,7 @@
 		<module>mycat-gateway</module>
 		<module>mycat-consumer</module>
 		<module>mycat-provider</module>
+		<module>mycat-common</module>
 	</modules>
 
 	<properties>
