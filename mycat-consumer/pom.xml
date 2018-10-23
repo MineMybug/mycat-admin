@@ -8,6 +8,12 @@
 	</parent>
 	<artifactId>mycat-consumer</artifactId>
 
+
+	<properties>
+		<swagger-version>2.8.0</swagger-version>
+		<jaxb-api-version>2.3.0</jaxb-api-version>
+	</properties>
+
 	<dependencies>
 		<!-- 引入服务容错hystrix的依赖 -->
 		<dependency>
@@ -40,6 +46,23 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<!-- swagger -->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>${swagger-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${jaxb-api-version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
