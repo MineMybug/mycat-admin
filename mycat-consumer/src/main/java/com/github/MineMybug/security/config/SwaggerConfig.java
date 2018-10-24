@@ -32,7 +32,7 @@ public class SwaggerConfig {
 	@Bean
 	public Docket api() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.apiInfo(apiInfo()).host("localhost:5001/api")
+				.apiInfo(apiInfo()).host("localhost:5001/api/consumer")
 				.select()
 				// 自行修改为自己的包路径
 				.apis(RequestHandlerSelectors.basePackage("com.github.MineMybug.security.controller"))

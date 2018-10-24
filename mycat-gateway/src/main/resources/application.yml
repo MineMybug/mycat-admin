@@ -19,6 +19,14 @@ spring:
         filters:
           - SwaggerHeaderFilter
           - StripPrefix=1
+      - id: MYCAT-PROVIDER
+        uri: lb://MYCAT-PROVIDER
+        order: 8001
+        predicates:
+          - Path=/api/testProvider/**
+        filters:
+          - SwaggerHeaderFilter
+          - StripPrefix=2
       
 server:
   port: 5001
