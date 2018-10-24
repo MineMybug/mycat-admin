@@ -21,6 +21,7 @@
 		<module>mycat-consumer</module>
 		<module>mycat-provider</module>
 		<module>mycat-common</module>
+		<module>mycat-auth</module>
 	</modules>
 
 	<properties>
@@ -80,6 +81,15 @@
 
 		</dependencies>
 	</dependencyManagement>
+
+	<!-- lombok 依赖 -->
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 
 	<distributionManagement>
 		<snapshotRepository>

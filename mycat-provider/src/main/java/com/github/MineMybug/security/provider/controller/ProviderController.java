@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.github.MineMybug.security.common.context.BaseContextHandler;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
@@ -31,6 +33,7 @@ public class ProviderController {
 	@RequestMapping(value="/demo", method = RequestMethod.GET)
 	public String provider(){
 //		int j = 1/0;
+		System.out.println("当前provider线程： " + Thread.currentThread().getName() + "" + "value: " + BaseContextHandler.get("test"));
 		return "i am "+ port;
 	}
 

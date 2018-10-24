@@ -55,7 +55,11 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>${jaxb-api-version}</version>
 		</dependency>
-
+		<dependency>
+			<groupId>com.github.MineMybug.security</groupId>
+			<artifactId>mycat-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 
