@@ -7,4 +7,7 @@
   </parent>
   <artifactId>mycat-auth</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>mycat-auth-server</module>
+  </modules>
 </project>

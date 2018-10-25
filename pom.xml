@@ -34,6 +34,7 @@
 		<spring.boot.version>2.0.3.RELEASE</spring.boot.version>
 		<spring.cloud.version>Finchley.SR1</spring.cloud.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<fastjson.version>1.2.33</fastjson.version>
 	</properties>
 
 	<!--依赖管理，用于管理spring-cloud的依赖，其中Camden.SR3是版本号 -->
@@ -77,6 +78,12 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons.lang3.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
 			</dependency>
 
 		</dependencies>
