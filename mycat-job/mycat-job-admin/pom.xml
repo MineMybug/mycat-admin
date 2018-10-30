@@ -128,11 +128,11 @@
 		</dependency>
 
 		<!-- xxl-job-core -->
-<!-- 		<dependency>
-			<groupId>com.jieshun</groupId>
-			<artifactId>xxl-job-core</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-		</dependency> -->
+		<dependency>
+			<groupId>com.github.MineMybug.security</groupId>
+			<artifactId>mycat-job-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency> 
 
 
 		<dependency>
