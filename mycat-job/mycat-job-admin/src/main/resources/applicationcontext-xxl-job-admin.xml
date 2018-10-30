@@ -22,7 +22,7 @@
 		</property>
 	</bean> -->
 	
-	<context:component-scan base-package="com.xxl.job.admin">
+	<context:component-scan base-package="com.github.MineMybug.security.job.admin">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
 
@@ -49,7 +49,7 @@
 
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-		<property name="basePackage" value="com.xxl.job.admin.dao" />
+		<property name="basePackage" value="com.github.MineMybug.security.job.admin.dao" />
 	</bean>
     
 	<!-- ********************************* part 2 :for tx ********************************* -->
@@ -71,7 +71,7 @@
 		<property name="configLocation" value="classpath:quartz.properties"/>
 	</bean>
 
-	<bean id="xxlJobDynamicScheduler" class="com.xxl.job.admin.core.schedule.XxlJobDynamicScheduler" init-method="init" destroy-method="destroy" >
+	<bean id="xxlJobDynamicScheduler" class="com.github.MineMybug.security.job.admin.core.schedule.XxlJobDynamicScheduler" init-method="init" destroy-method="destroy" >
 		<!-- (轻易不要变更“调度器名称”, 任务创建时会绑定该“调度器名称”) -->
 		<property name="scheduler" ref="quartzScheduler"/>
 		<property name="accessToken" value="${xxl.job.accessToken}" />

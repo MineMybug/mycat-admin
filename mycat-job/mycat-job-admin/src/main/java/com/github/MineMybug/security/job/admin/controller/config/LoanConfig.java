@@ -5,6 +5,6 @@ import org.springframework.context.annotation.ImportResource;
 
 @Configuration
 @ImportResource("classpath:applicationcontext-xxl-job-admin.xml")
-public class LoadConfig {
+public class LoanConfig {
 	
 }
