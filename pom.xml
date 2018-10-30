@@ -22,6 +22,7 @@
 		<module>mycat-provider</module>
 		<module>mycat-common</module>
 		<module>mycat-auth</module>
+		<module>mycat-job</module>
 	</modules>
 
 	<properties>
