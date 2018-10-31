@@ -12,6 +12,7 @@
 	<modules>
 		<module>mycat-job-admin</module>
 		<module>mycat-job-core</module>
+		<module>mycat-job-excutor</module>
 	</modules>
 
 	<description>A lightweight distributed task scheduling framework.</description>
