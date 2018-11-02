@@ -9,6 +9,7 @@ package com.github.MineMybug.security.redis.config;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
@@ -25,6 +26,7 @@ import redis.clients.jedis.JedisPoolConfig;
 */
 @Configuration
 @EnableCaching
+@ComponentScan({"com.github.MineMybug.security.redis.clientservice"})
 public class RedisConfiguration {
 	
 	@Bean

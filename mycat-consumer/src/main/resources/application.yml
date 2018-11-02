@@ -2,6 +2,19 @@
 spring:
   application:
     name: mycat-consumer
+  redis:
+      database: 1
+      hostName: 10.10.203.105
+      port: 6379
+      password: 111111
+      encode: utf-8
+      pool:
+        maxIdle: 300
+        maxTotal: 600
+        timeBetweenEvictionRunsMillis: 30000
+        minEvictableIdleTimeMillis: 30000
+        testOnBorrow: true
+      key_prefix: test
       
 server:
   port: 6001

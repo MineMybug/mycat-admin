@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.MineMybug.security.common.context.BaseContextHandler;
 import com.github.MineMybug.security.fiegnclient.IProviderFeign;
+import com.github.MineMybug.security.redis.clientservice.RedisClient;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -35,6 +36,9 @@ public class ConsumerController {
 	@Autowired
 	private IProviderFeign iProviderFeign;
 	
+	@Autowired
+	private RedisClient redisClient;
+	
 	@RequestMapping(value="/hello",method=RequestMethod.GET)
 	public String hello(){
 		BaseContextHandler.set("test","consumer");
@@ -46,6 +50,8 @@ public class ConsumerController {
 	@ApiOperation(value="获取端口号",notes="获取端口号")
 	@RequestMapping(value="/testSwagger",method=RequestMethod.GET)
 	public String testSwagger(){
+		
+		redisClient.set("hello", "111111");
 		return "i am " + port;
 	}
 

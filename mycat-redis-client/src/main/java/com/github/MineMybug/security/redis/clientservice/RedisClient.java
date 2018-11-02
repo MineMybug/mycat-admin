@@ -4,7 +4,7 @@
 * @date 2018年10月31日  
 * @version 1.0  
 */
-package com.github.MineMybug.security.redis.clinetservice;
+package com.github.MineMybug.security.redis.clientservice;
 
 import java.io.Serializable;
 import java.util.ArrayList;

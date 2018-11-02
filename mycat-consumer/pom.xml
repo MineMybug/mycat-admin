@@ -64,6 +64,11 @@
 			<artifactId>mycat-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>com.github.MineMybug.security</groupId>
+			<artifactId>mycat-redis-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 
 	</dependencies>
 
