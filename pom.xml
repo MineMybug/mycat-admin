@@ -25,6 +25,7 @@
 		<module>mycat-job</module>
 		<module>mycat-redis</module>
 		<module>mycat-redis-client</module>
+		<module>mycat-test</module>
 	</modules>
 
 	<properties>
