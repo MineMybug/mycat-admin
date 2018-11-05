@@ -22,10 +22,10 @@
 		<module>mycat-provider</module>
 		<module>mycat-common</module>
 		<module>mycat-auth</module>
-		<module>mycat-job</module>
 		<module>mycat-redis</module>
 		<module>mycat-redis-client</module>
 		<module>mycat-test</module>
+		<module>mycat-xxl-job</module>
 	</modules>
 
 	<properties>
