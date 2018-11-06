@@ -6,6 +6,8 @@
 
 三.使用springcloud 的各个组件 搭建基础服务
 
+四.集成elasticSearch-stater 引入starter 可自动加载配置类，连接elasticSearch
+
 ##mycat-xxl-job 具有一下功能：
 
 ## Features

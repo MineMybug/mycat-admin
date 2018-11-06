@@ -26,6 +26,7 @@
 		<module>mycat-redis-client</module>
 		<module>mycat-test</module>
 		<module>mycat-xxl-job</module>
+		<module>mycat-es-starter</module>
 	</modules>
 
 	<properties>
