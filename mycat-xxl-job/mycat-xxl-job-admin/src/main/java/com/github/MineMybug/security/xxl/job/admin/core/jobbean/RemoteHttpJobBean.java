@@ -1,14 +1,15 @@
 package com.github.MineMybug.security.xxl.job.admin.core.jobbean;
 
-import com.github.MineMybug.security.xxl.job.admin.core.thread.JobTriggerPoolHelper;
-import com.github.MineMybug.security.xxl.job.admin.core.trigger.TriggerTypeEnum;
-
+import org.quartz.DisallowConcurrentExecution;
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.quartz.JobKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.quartz.QuartzJobBean;
+
+import com.github.MineMybug.security.xxl.job.admin.core.thread.JobTriggerPoolHelper;
+import com.github.MineMybug.security.xxl.job.admin.core.trigger.TriggerTypeEnum;
 
 /**
  * http job bean

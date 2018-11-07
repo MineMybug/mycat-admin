@@ -142,5 +142,6 @@
 	<modules>
 		<module>mycat-xxl-job-admin</module>
 		<module>mycat-xxl-job-core</module>
+		<module>mycat-xxl-job-executor</module>
 	</modules>
 </project>
