@@ -10,13 +10,9 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-parent</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+			<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> 
+				<version>${spring.boot.version}</version> <type>pom</type> <scope>import</scope> 
+				</dependency> -->
 
 			<!-- jetty -->
 			<dependency>
@@ -105,27 +101,22 @@
 		</dependency>
 
 		<!-- xxl-job-core -->
- 		<dependency>
+		<dependency>
 			<groupId>com.github.MineMybug.security</groupId>
 			<artifactId>mycat-xxl-job-core</artifactId>
 			<version>${project.parent.version}</version>
-		</dependency> 
+		</dependency>
 
 	</dependencies>
 
 	<build>
 		<plugins>
+			<!-- <plugin> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-maven-plugin</artifactId> 
+				<version>${spring-boot.version}</version> <executions> <execution> <goals> 
+				<goal>repackage</goal> </goals> </execution> </executions> </plugin> -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring-boot.version}</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<!-- docker -->
 			<plugin>

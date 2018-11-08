@@ -10,14 +10,10 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<!-- Import dependency management from Spring Boot (依赖管理：继承一些默认的依赖，工程需要依赖的jar包的管理，申明其他dependency的时候就不需要version) -->
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-parent</artifactId>
-				<version>${spring-boot.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+			<!-- <dependency> Import dependency management from Spring Boot (依赖管理：继承一些默认的依赖，工程需要依赖的jar包的管理，申明其他dependency的时候就不需要version) 
+				<groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-parent</artifactId> 
+				<version>${spring.boot.version}</version> <type>pom</type> <scope>import</scope> 
+				</dependency> -->
 
 			<!-- jetty -->
 			<dependency>
@@ -62,10 +58,29 @@
 		</dependency>
 
 		<!-- xxl-job-core -->
- 		<dependency>
+		<dependency>
 			<groupId>com.github.MineMybug.security</groupId>
 			<artifactId>mycat-xxl-job-core</artifactId>
 			<version>${project.parent.version}</version>
+		</dependency>
+
+		<!-- mybatis-starter：mybatis + mybatis-spring + tomcat-jdbc（default） -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis-spring-boot-starter.version}</version>
+		</dependency>
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<!-- alibaba的druid数据库连接池 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid-spring-boot-starter</artifactId>
+			<version>1.1.9</version>
 		</dependency>
 
 	</dependencies>
@@ -76,14 +91,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring-boot.version}</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>repackage</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
