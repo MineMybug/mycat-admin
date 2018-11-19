@@ -13,7 +13,7 @@ import com.github.MineMybug.security.xxl.job.core.biz.model.ReturnT;
 import com.github.MineMybug.security.xxl.job.core.handler.IJobHandler;
 import com.github.MineMybug.security.xxl.job.core.handler.annotation.JobHandler;
 import com.github.MineMybug.security.xxl.job.executor.model.User;
-import com.github.MineMybug.security.xxl.job.executor.service.userservice.UserServiceImpl;
+import com.github.MineMybug.security.xxl.job.executor.service.userservice.impl.UserServiceImpl;
 
 /**   
 * <p>Description: </p>  

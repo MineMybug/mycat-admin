@@ -4,7 +4,7 @@
 * @date 2018年11月9日  
 * @version 1.0  
 */
-package com.github.MineMybug.security.xxl.job.executor.service.userservice;
+package com.github.MineMybug.security.xxl.job.executor.service.userservice.impl;
 
 import java.util.List;
 
@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.github.MineMybug.security.xxl.job.executor.mapper.UserMapper;
 import com.github.MineMybug.security.xxl.job.executor.model.User;
+import com.github.MineMybug.security.xxl.job.executor.service.userservice.IUserService;
 
 /**   
 * <p>Description: </p>  
