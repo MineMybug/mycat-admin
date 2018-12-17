@@ -27,6 +27,7 @@
 		<module>mycat-test</module>
 		<module>mycat-xxl-job</module>
 		<module>mycat-es-starter</module>
+		<module>mycat-tcc</module>
 	</modules>
 
 	<properties>
