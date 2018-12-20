@@ -22,6 +22,15 @@ public class Apple {
 	private int price;
 	
 	public String name;
+	
+	public Apple(int price,String name){
+		this.price = price;
+		this.name = name;
+	}
+	
+	public Apple(){
+		
+	}
 
 	/**
 	 * @return the price
@@ -35,6 +44,23 @@ public class Apple {
 	 */
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	
+	@Override
+	public boolean equals(Object obj){
+		if(obj == null){
+			return false;
+		}
+		//如果是同一个对象则返回ture,否则返回false
+		if(this == obj){
+			return true;
+		}
+		//判断类型是否相同
+		if(this.getClass() != obj.getClass()){
+			return false;
+		}
+		Apple apple = (Apple)obj;  
+		return name.equals(apple.name) && price==apple.price;  
 	}
 	
 	public static void main(String[] args) throws Exception {

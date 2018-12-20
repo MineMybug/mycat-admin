@@ -28,6 +28,7 @@
 		<module>mycat-xxl-job</module>
 		<module>mycat-es-starter</module>
 		<module>mycat-tcc</module>
+		<module>mycat-sjdbc-sharding-table</module>
 	</modules>
 
 	<properties>

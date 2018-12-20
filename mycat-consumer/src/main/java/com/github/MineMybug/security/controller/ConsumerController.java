@@ -18,7 +18,6 @@ import com.github.MineMybug.security.redis.clientservice.RedisClient;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
 
 /**   
 * <p>Description: </p>  

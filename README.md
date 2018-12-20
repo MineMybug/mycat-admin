@@ -10,5 +10,7 @@
 
 五.集成tcc-transaction 分布式事务处理 后续引进
 
+六.使用Sharding-JDBC 分表
+
 	
 	
