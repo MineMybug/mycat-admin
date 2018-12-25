@@ -4,9 +4,9 @@ spring:
     name: mycat-consumer
   redis:
       database: 1
-      hostName: 10.10.203.105
+      hostName: 10.10.203.13
       port: 6379
-      password: 111111
+      password: Jht123456
       encode: utf-8
       pool:
         maxIdle: 300
